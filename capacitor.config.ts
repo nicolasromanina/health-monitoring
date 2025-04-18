@@ -18,6 +18,9 @@ const config: CapacitorConfig = {
       spinnerColor: "#FFFFFF",
       splashFullScreen: true,
       splashImmersive: true
+    },
+    Preferences: {
+      // Preferences plugin configuration (if needed)
     }
   }
 };
