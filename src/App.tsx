@@ -14,6 +14,7 @@ import Devices from "./pages/Devices";
 import Metrics from "./pages/Metrics";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
+import Index from "./pages/Index";
 
 // Components
 import AuthGuard from "./components/auth/AuthGuard";
@@ -28,8 +29,8 @@ const App = () => {
         <Sonner />
         <BrowserRouter>
           <Routes>
-            {/* Redirect from root to Dashboard or Login */}
-            <Route path="/" element={<Navigate to="/dashboard" replace />} />
+            {/* Root route - show the index page */}
+            <Route path="/" element={<Index />} />
             
             {/* Auth routes */}
             <Route path="/login" element={<Login />} />
